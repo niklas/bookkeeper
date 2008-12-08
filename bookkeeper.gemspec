@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.version = '0.2.0'
   s.summary = 'A double-entry accounting system for Rails.'
   s.email = 'sluscher@stevenluscherdesign.com'
-  s.homepage = ''
+  s.homepage = 'http://github.com/steveluscher/bookkeeper'
   s.description = 'This alpha release of Bookkeeper is intended for community feedback; please be advised that it will undergo significant changes between now and its 1.0 release.'
   s.has_rdoc = false
   s.authors = ['Steven Luscher', 'Scott Patten']
