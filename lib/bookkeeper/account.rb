@@ -82,7 +82,7 @@ class Bookkeeper::Account < ActiveRecord::Base
     end
     
     def validate_account_created_through_a_subclass
-      errors.add_to_base 'Accounts may only be created by instantiating a subclass of Account.' if self.class == Account
+      errors.add_to_base 'Accounts may only be created by instantiating a subclass of Account.' if self.class == Bookkeeper::Account
     end
     
     def validate_subaccount_same_type_as_parent
