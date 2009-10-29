@@ -48,7 +48,7 @@ class CreateBookkeeperTables < ActiveRecord::Migration
       t.references  :asset_type
       t.integer     :account_id
       t.string      :accounting_period
-      t.integer     :amount :null => false
+      t.integer     :amount, :null => false
       t.timestamps
     end
 
