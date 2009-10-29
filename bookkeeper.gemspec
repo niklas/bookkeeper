@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'bookkeeper'
-  s.version = '0.2.2'
+  s.version = '0.2.3'
   s.summary = 'A double-entry accounting system for Rails.'
   s.email = 'sluscher@stevenluscherdesign.com'
   s.homepage = 'http://github.com/steveluscher/bookkeeper'
