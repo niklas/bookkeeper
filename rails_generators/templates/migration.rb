@@ -10,8 +10,8 @@ class CreateBookkeeperTables < ActiveRecord::Migration
       t.timestamps
     end
     
-    Account::Asset.create!(:name => 'Accounts Receivable')
-    Account::Liability.create!(:name => 'Accounts Payable')
+    Bookkeeper::Account::Asset.create!(:name => 'Accounts Receivable')
+    Bookkeeper::Account::Liability.create!(:name => 'Accounts Payable')
 
     create_table :asset_types do |t|
       t.string      :name
@@ -19,8 +19,8 @@ class CreateBookkeeperTables < ActiveRecord::Migration
       t.string      :type
     end
     
-    AssetType::CAD.create!(:name => 'Canadian Dollar', :symbol => '$')
-    AssetType::USD.create!(:name => 'US Dollar', :symbol => '$')
+    Bookkeeper::AssetType::CAD.create!(:name => 'Canadian Dollar', :symbol => '$')
+    Bookkeeper::AssetType::USD.create!(:name => 'US Dollar', :symbol => '$')
 
     create_table :batches do |t|
       t.timestamps
