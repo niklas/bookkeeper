@@ -1,6 +1,7 @@
 require 'acts_as_tree'
 require 'acts_as_list'
 
+require File.join(File.dirname(__FILE__), 'immutable-attribute-plugin', 'init')
 
 module Bookkeeper; end
 lib = File.dirname(__FILE__)
