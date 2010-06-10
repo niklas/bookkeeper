@@ -8,7 +8,7 @@ class BookkeeperGenerator < Rails::Generators::Base
 
   desc "generates migration to create bookkeeper tables"
   def copy_migration_file
-    migration_template 'migration.rb', 'db/migrate/create_bookkeeper_table.rb'
+    migration_template 'migration.rb', 'db/migrate/create_bookkeeper_tables.rb'
   end
 
   def create_fixtures
