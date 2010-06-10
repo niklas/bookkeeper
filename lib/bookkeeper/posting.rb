@@ -5,7 +5,7 @@ class Bookkeeper::Posting < ActiveRecord::Base
   
   ensures_immutability_of :all
   
-  before_validation_on_create :default_to_us_dollars, :unless => :asset_type
+  before_validation :default_to_us_dollars, :unless => :asset_type, :on => :create
   
   validates_presence_of :account
   validates_presence_of :asset_type
