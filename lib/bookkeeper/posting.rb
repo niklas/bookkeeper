@@ -19,9 +19,10 @@ class Bookkeeper::Posting < ActiveRecord::Base
     def validate_belongs_to_a_journal
       parent_journal = self.journal
 
-      if !parent_journal
-        ObjectSpace.each_object(Journal) {|j| parent_journal = j if j.postings.include?(self)}
-      end
+      # FIXME what is that doing anyway?
+      #if !parent_journal
+      #  ObjectSpace.each_object(Journal) {|j| parent_journal = j if j.postings.include?(self)}
+      #end
       
       errors.add :journal, 'must be set.' if !parent_journal      
     end
