@@ -28,6 +28,6 @@ class Bookkeeper::Posting < ActiveRecord::Base
     end
     
     def default_to_us_dollars
-      self.asset_type = AssetType::USD.find(:first)
+      self.asset_type = Bookkeeper::AssetType::USD.find(:first)
     end
 end
